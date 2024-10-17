@@ -1,0 +1,23 @@
+  {
+    "manifest_version": 3,
+    "name": "Hate Speech Filter",
+    "version": "1.0",
+    "description": "Masque les commentaires de discours haineux sur TikTok.",
+    "permissions": ["activeTab"],
+    "background": {
+        "service_worker": "background.js" // Si tu as un fichier de service worker, sinon omets cette partie.
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://www.tiktok.com/*"],  // Modifie cette URL si nécessaire.
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}
+
+  
