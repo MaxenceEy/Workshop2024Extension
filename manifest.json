@@ -1,6 +1,6 @@
   {
     "manifest_version": 3,
-    "name": "Hate Speech Filter",
+    "name": "HateBlock",
     "version": "1.0",
     "description": "Masque les commentaires de discours haineux sur TikTok.",
     "permissions": ["activeTab"],
