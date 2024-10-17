@@ -5,11 +5,11 @@
     "description": "Masque les commentaires de discours haineux sur TikTok.",
     "permissions": ["activeTab"],
     "background": {
-        "service_worker": "background.js" // Si tu as un fichier de service worker, sinon omets cette partie.
+        "service_worker": "background.js" 
     },
     "content_scripts": [
         {
-            "matches": ["*://www.tiktok.com/*"],  // Modifie cette URL si nécessaire.
+            "matches": ["*://www.tiktok.com/*"], 
             "js": ["content.js"]
         }
     ],
